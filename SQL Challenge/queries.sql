@@ -55,5 +55,5 @@ SELECT
   COUNT(employees.last_name) as total
 FROM employees
 GROUP BY employees.last_name
-ORDER BY employees.last_name
+ORDER BY count(employees.last_name) DESC
 
